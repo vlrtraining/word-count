@@ -1,0 +1,29 @@
+<h1>Result Page</h1>
+<h2> your text </h2>
+{{ msg }}
+<h3>This text contains.{{ length }} words</h3>
+
+<hr />
+<b>all words count ----</b>
+
+{% for a,b in abc.items %}
+{{ a }} = {{ b }}
+{% endfor %}
+<hr />
+<ol type="1">
+{% for key, value in abc.items %}
+
+  <li>{{ key }}: {{ value }}</li>
+{% endfor %}
+</ol>
+<hr />
+<b>all words count</b>
+<ol type="1">
+{% for key, value in cba %}
+
+  <li>{{ key }}: {{ value }}</li>
+
+
+
+{% endfor %}
+</ol>
