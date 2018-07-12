@@ -1,0 +1,132 @@
+python manage.py help
+
+python -m django --version
+
+django-admin startproject mysite
+
+python manage.py runserver
+
+git
+
+git init
+git status
+git add -A
+git commit -m "my first commit"
+
+
+rameshvch 
+
+git config --global user.name "rameshvch"
+git config --global user.email ramesh.vch@gmail.com
+
+ 
+cd desktop/python web/word count
+python manage.py runserver
+
+wht is vertival environment
+pip3 install virtualenv
+cd desktop
+virtualenv vlrvenv
+activte how
+source  vlrvenv/bin/activate
+source vlrvenv/bin/activate
+
+vlrvenv\Scripts\activate.bat
+type python
+---colse deactivate
+start
+django-admin startproject blog
+cd blog
+python manage.py runserver
+git ignore file
+--------
+git init
+git status
+git add -A
+git commit -m "apps added to settings.py"
+runserver now
+git status
+local host
+-----
+
+run cmd
+vlrvenv\Scripts\activate.bat
+python manage.py startapp posts
+python manage.py startapp jobs
+git add _a
+git commit -m "addde sposts and jobs aps"
+--------------------
+modules 
+C:\Users\venkat>cd desktop
+
+C:\Users\venkat\Desktop>vlrvenv\Scripts\activate.bat
+
+(vlrvenv) C:\Users\venkat\Desktop>cd blog
+
+(vlrvenv) C:\Users\venkat\Desktop\blog>
+in job
+## models.py create class
+
+## https://docs.djangoproject.com/en/2.0/topics/db/models/
+A model is the single, definitive source of information about your data. It contains the essential fields and behaviors of the data you’re storing. Generally, each model maps to a single database table.
+code
+from django.db import models
+
+class Person(models.Model):
+    first_name = models.CharField(max_length=30)
+    last_name = models.CharField(max_length=30)
+-------------
+image fields
+https://docs.djangoproject.com/en/2.0/ref/models/fields/
+## after create image and summary filed run server
+python manage.py runserver
+You have 14 unapplied migration(s).
+plz do migrations
+python manage.py migrate
+----------------------
+python manage.py makemigrations
+
+# main blog folde
+#setting.py
+#installed aps
+INSTALLED_APPS = [
+
+     'jobs.apps.JobsConfig',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
+# ad media file
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+#medi folder craeted automaticall
+## ad media url
+MEDIA_URL = '/media/'
+
+# check for migrations
+python manage.py makemigrations
+#pillow
+pip install Pillow==5.0.0
+------------
+python manage.py migrate
+-------------
+admin
+python manage.py createsuperuser
+---# 
+add aps to admin
+### jobs/admin.py
+ from .models import Job
+# open admin
+ad image aand text
+# click on image
+ # open media folder 
+
+##### goto main urls
++ static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+
+imort
+from django.conf import settings
+
+from django.conf.urls.static import static
